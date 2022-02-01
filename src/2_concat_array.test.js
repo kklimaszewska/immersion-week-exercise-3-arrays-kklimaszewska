@@ -9,7 +9,7 @@ test("Concat dog text", () => {
 test("Concat christmas text", () => {
   expect(
     concatArray(["All", "I", "want", "for", "christmas", "is", "you"])
-  ).toBe("'All I want for christmas is you.");
+  ).toBe("All I want for christmas is you.");
 });
 
 test("Concat empty array.", () => {

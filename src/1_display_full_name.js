@@ -1,16 +1,17 @@
-module.exports = function displayFullName() {
-  // TODO Implement me.
-};
+// module.exports = function displayFullName() {
+//   // TODO Implement me.
+// };
 
 function displayFullName(fullName) {
+  // TODO Implement me.
   let allNames = fullName.split(' ');
   let lastName = allNames[allNames.length - 1];
   let firstNames = allNames.slice(0, allNames.length - 1).join(' ');
   console.log(`My name is ${lastName}, ${firstNames} ${lastName}`);
   return (`My name is ${lastName}, ${firstNames} ${lastName}`);
-}
+};
 
-
+module.exports = displayFullName;
 
 
 

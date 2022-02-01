@@ -1,14 +1,12 @@
-module.exports = function concatArray() {
-  // TODO Implement me.
-};
+
 
 function concatArray(strArray) {
   let concatStr = strArray.join(' ') + '.';
-  console.log(concatStr);
   return concatStr;
-}
+};
 
 
+module.exports = concatArray;
 /* Weryfikacja */
 
 function verify(input, goal) {
