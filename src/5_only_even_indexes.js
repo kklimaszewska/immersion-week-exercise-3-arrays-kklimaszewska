@@ -1,7 +1,13 @@
-module.exports = function evenIndexes() {
-  // TODO Implement me.
+
+function evenIndexes(str) {
+  let arr = [];
+  for (i=0; i<str.length; i+=2) {
+    arr.push(str[i]);
+  }
+  return arr;
 };
 
+module.exports = evenIndexes;
 /**Weryfikacja */
 
 function verify(input, goal) {
