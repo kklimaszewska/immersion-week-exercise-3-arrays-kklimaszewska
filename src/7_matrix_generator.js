@@ -1,7 +1,19 @@
-module.exports = function matrixGen() {
-  // TODO Implement me.
+
+function matrixGen(row, col) {
+  let arr = [];
+    for (let i=0; i<row; i++) {
+      arr.push([]);
+    };
+    for (let i=0; i<row; i++) {
+      for (let j=0; j<col; j++) {
+        arr[i].push((i+1)*(j+1));
+      };
+    };
+    return arr;
 };
 
+
+module.exports = matrixGen;
 /**Weryfikacja */
 
 function verify(input, goal) {

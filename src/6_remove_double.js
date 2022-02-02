@@ -1,7 +1,16 @@
-module.exports = function removeDouble() {
-  // TODO Implement me.
+function removeDouble(arr) {
+  for (let i=arr.length; i>-1; i--) {
+    for (let j=i-1; j>-1; j--) {
+      if (arr[i] === arr[j]) {
+        arr.splice(j,1);
+      }
+    }
+  }
+  return arr;
 };
 
+
+module.exports = removeDouble;
 /**Weryfikacja */
 
 function verify(input, goal) {
