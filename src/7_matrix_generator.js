@@ -3,8 +3,6 @@ function matrixGen(row, col) {
   let arr = [];
     for (let i=0; i<row; i++) {
       arr.push([]);
-    };
-    for (let i=0; i<row; i++) {
       for (let j=0; j<col; j++) {
         arr[i].push((i+1)*(j+1));
       };
@@ -17,7 +15,7 @@ module.exports = matrixGen;
 /**Weryfikacja */
 
 function verify(input, goal) {
-  if (input === goal) {
+  if (input.toString() === goal.toString()) {
     console.log('Gratulacje!');
   } else {
     console.log(`Niestety, oczekiwano - ${goal}, otrzymano - ${input}`);
